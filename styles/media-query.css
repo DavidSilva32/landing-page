@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+:root {
+    /* COLORS */
+    --font-color: rgb(132, 14, 201);
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        margin-bottom: 20vh;
+    }
+    
+    header h1 {
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    nav a:hover {
+        color: var(--font-color);
+        transition: .3s;
+    }
+
+    nav a#button:hover {
+        background-color: var(--font-color);
+        color: white;
+        box-shadow: 0px 0px 15px white;
+    }
+    
+    /* SECTIONS MAIN AND IMAGE */
+
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main h2 {
+        font-size: 5vw;
+        line-height: 50px;
+    }
+
+    main p {
+        font-size: 1.2em;
+    }
+
+    main img {
+        width: 42vw;
+    }
+    main form input {
+       padding: 15px;
+       border-radius: 30px;
+       font-size: 1em;
+    }
+
+    main form [type= "submit"] {
+        height: 50px;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main h2 {
+        font-size: 4vw;
+    }
+}
